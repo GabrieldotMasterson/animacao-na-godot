@@ -1,0 +1,55 @@
+[gd_scene load_steps=11 format=3 uid="uid://bmghsilodm5eq"]
+
+[ext_resource type="Script" path="res://scripts/woman.gd" id="1_ecmny"]
+[ext_resource type="Texture2D" uid="uid://bcq0hnhyl1q8m" path="res://arts/GABURA/AULA TESTE ANIME SPRITES/run_animation/run-1.png" id="1_vfso0"]
+[ext_resource type="Texture2D" uid="uid://6j1ht6x0b766" path="res://arts/GABURA/AULA TESTE ANIME SPRITES/run_animation/run-2.png" id="2_13b4b"]
+[ext_resource type="Texture2D" uid="uid://olads4lh1fu4" path="res://arts/GABURA/AULA TESTE ANIME SPRITES/run_animation/run-3.png" id="3_uclls"]
+[ext_resource type="Texture2D" uid="uid://bn0dbqrn02pkp" path="res://arts/GABURA/AULA TESTE ANIME SPRITES/run_animation/run-4.png" id="4_o13ys"]
+[ext_resource type="Texture2D" uid="uid://bw2pj8psar7h" path="res://arts/GABURA/AULA TESTE ANIME SPRITES/run_animation/run-5.png" id="5_iwkbq"]
+[ext_resource type="Texture2D" uid="uid://c55vudxsbd30t" path="res://arts/GABURA/AULA TESTE ANIME SPRITES/run_animation/run-6.png" id="6_edpv0"]
+[ext_resource type="Texture2D" uid="uid://c122oiuid570p" path="res://arts/GABURA/AULA TESTE ANIME SPRITES/run_animation/run-7.png" id="7_a5jtr"]
+[ext_resource type="Texture2D" uid="uid://dftcsdbvxcdfn" path="res://arts/GABURA/AULA TESTE ANIME SPRITES/run_animation/run-8.png" id="8_vy6o3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g267u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vfso0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_13b4b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_uclls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_o13ys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_iwkbq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_edpv0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_a5jtr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_vy6o3")
+}],
+"loop": true,
+"name": &"RUN",
+"speed": 14.0
+}]
+
+[node name="WOMAN" type="Node2D"]
+script = ExtResource("1_ecmny")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(395, 283)
+rotation = -0.000624854
+scale = Vector2(8.9171, 8.9171)
+sprite_frames = SubResource("SpriteFrames_g267u")
+animation = &"RUN"
+frame_progress = 0.0421793
